@@ -1,0 +1,10 @@
+- name: ping
+  ping:
+  register: result
+
+- name: 需手动重启服务器
+  debug:
+    msg: >
+      节点：{{ inventory_hostname }}，
+      ping 操作，
+      成功。

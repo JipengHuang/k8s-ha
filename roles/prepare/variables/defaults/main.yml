@@ -213,8 +213,8 @@ kubernetes_yum_repo: https://mirrors.aliyun.com/kubernetes/yum/repos/kubernetes-
 kubernetes_apt_repo: deb https://mirrors.aliyun.com/kubernetes/apt kubernetes-xenial main
 
 # kubernetes各组件镜像仓库前缀
-kube_image_repository: registry.aliyuncs.com/kubeadm-ha
-
+#kube_image_repository: registry.aliyuncs.com/kubeadm-ha
+kube_image_repository: k8s.gcr.io
 # kubernetes证书过期时间（天）
 kube_certs_expired: 3650
 # kubernetes根证书过期时间（天）

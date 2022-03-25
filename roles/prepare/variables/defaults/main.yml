@@ -57,7 +57,7 @@ current_host_ip: >-
 skip_verify_node: false
 
 # 节点时区
-#timezone: Asia/Shanghai
+timezone: Asia/Shanghai
 
 # 禁用防火墙
 firewalld_disabled: true

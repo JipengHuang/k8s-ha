@@ -15,7 +15,7 @@
  firewalld_disabled: true
 
 # # 节点时区
-# timezone: Asia/Shanghai
+ timezone: Asia/Shanghai
 
 # # 是否启用 chrony 进行时间同步
 # chrony_enabled: false

@@ -22,7 +22,7 @@
 
   - name: 渲染 kubernetes-dashboard 配置文件
     template:
-      src: kubernetes-dashboard.yaml.j2
+      src: kubernetes-dashboardv2.5.1.yaml.j2
       dest: /etc/kubernetes/plugins/kubernetes-dashboard/kubernetes-dashboard.yaml
     register: kubernetes_dashboard_manifest
 

@@ -480,7 +480,7 @@ ingress_controller_tpye: nginx
 
 # nginx-ingress-controller 镜像地址
 nginx_ingress_image: "{{ kube_image_repository }}/ingress-nginx/controller:v0.47.0"
-nginx_ingress_webhook_certgen_image: "jettech/kube-webhook-certgen:v1.5.1"
+nginx_ingress_webhook_certgen_image: "docker.io/jettech/kube-webhook-certgen:v1.5.1"
 
 # traefik默认证书过期时间（天）
 traefik_certs_expired: 3650

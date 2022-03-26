@@ -494,7 +494,7 @@ kubernetesui_dashboard_enabled: true
 kubernetesui_dashboard_certs_expired: 3650
 # kubernetes-dashboard 镜像地址
 kubernetesui_dashboard_image: "kubernetesui/dashboard:v2.5.1"
-kubernetesui_metrics_scraper_image: "kubernetesui/metrics-scraper:v1.0.7
+kubernetesui_metrics_scraper_image: "kubernetesui/metrics-scraper:v1.0.7"
 
 #-------------------------------------------- metrics-server 相关参数 ----------------------------------------#
 # 是否启用metrics-server

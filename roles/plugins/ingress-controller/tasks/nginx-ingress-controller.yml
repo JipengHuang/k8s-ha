@@ -1,7 +1,7 @@
 - block:
   - name: 渲染 nginx-ingress-controller 配置文件
     template:
-      src: nginx-ingress-controller.yaml.j2
+      src: nginx-ingress-controllerv1.12.yaml.j2
       dest: /etc/kubernetes/plugins/ingress-controller/nginx-ingress-controller.yaml
     register: ingress_nginx_manifest
 

@@ -29,8 +29,7 @@
 
   - name: 配置 sudo alias
     shell: >
-        sed -i '$d'  /etc/profile
-        echo "alias s=\"sudo su - root\"" >> /etc/profile
+      sed -i '$d'  /etc/profile && echo "alias s=\"sudo su - root\"" >> /etc/profile
     when: '"s=\"sudo su - root\"" in sudo_alias_configed.stdout'
 
 

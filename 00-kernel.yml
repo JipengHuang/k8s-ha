@@ -18,5 +18,5 @@
   roles:
   - prepare/variables
   - prepare/base
-  - prepare/kernel
+  #- prepare/kernel
   environment: "{{ proxy_env }}"

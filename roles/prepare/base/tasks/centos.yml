@@ -29,8 +29,8 @@
 
   - name: 配置 sudo alias
     shell: >
-      sed -i '$d'  /etc/profile && echo "alias s=\"sudo su - root\"" >> /etc/profile
-    when: '"s=\"sudo su - root\"" in sudo_alias_configed.stdout'
+       echo "alias s=\"sudo su - root\"" >> /etc/profile
+    when: '"not be found"" in sudo_alias_configed.stdout'
 
 
 - name: 设置 yum obsoletes 值为 0

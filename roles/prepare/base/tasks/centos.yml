@@ -21,6 +21,17 @@
     when: '"active" in firewalld_already_installed.stdout'
   when: "(firewalld_disabled | bool) | default(true)"
 
+    - name: 判断 sudo alias 是否配置
+      shell: >
+        cat /etc/profile |grep  "s=\"sudo su - root\"" || echo "not be found"
+      register: sudo_alias_configed
+
+    - name: 配置 sudo alias
+      shell: >
+        echo "s=\"sudo su - root\"" >> /etc/profile
+      when: '"not be found" in sudo_alias_configed.stdout'
+
+
 - name: 设置 yum obsoletes 值为 0
   lineinfile:
     path: /etc/yum.conf
